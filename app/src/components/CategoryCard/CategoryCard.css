@@ -1,0 +1,102 @@
+.category-card-item {
+
+  margin: 0 15px 30px;
+  overflow: hidden;
+  border-radius: 15px;
+  max-width: 200px;
+  min-width: 200px;
+}
+.category-card-item-content {
+  display: block;
+  padding: 10px 10px;
+  background-image: url(../../content/img/istockphoto-953140058-170667a.jpg);
+  overflow: hidden;
+  position: relative;
+}
+
+.category-card-item-content:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.category-card-item-content:hover .category-card-item-bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+.category-card-item-bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.category-card-item-title {
+  min-height: 50px;
+  margin-top: 10px;
+
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+
+  z-index: 2;
+  position: relative;
+}
+.category-card-item:nth-child(2n) .category-card-item-bg {
+  background-color: #3ecd5e;
+}
+.category-card-item:nth-child(3n) .category-card-item-bg {
+  background-color: #e44002;
+}
+.category-card-item:nth-child(4n) .category-card-item-bg {
+  background-color: #952aff;
+}
+.category-card-item:nth-child(5n) .category-card-item-bg {
+  background-color: #cd3e94;
+}
+.category-card-item:nth-child(6n) .category-card-item-bg {
+  background-color: #4c49ea;
+}
+
+@media only screen and (max-width: 979px) {
+  .category-card-item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .category-card-item-title {
+    font-size: 24px;
+  }
+}
+
+/* @media only screen and (max-width: 767px) {
+    .ag-format-container {
+      width: 96%;
+    }
+  
+  } */
+
+@media only screen and (max-width: 639px) {
+  .category-card-item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .category-card-item-title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .category-card-item-content {
+    padding: 22px 40px;
+  }
+}

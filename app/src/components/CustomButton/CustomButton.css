@@ -1,0 +1,41 @@
+.custom-button {
+  font-size: 1em;
+  border-radius: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 6px 8px;
+  border: none;
+  color: white;
+}
+.custom-button:hover {
+  transform: translateY(-7px);
+}
+
+.primary {
+  background-color: #2d7dbb;
+
+}
+.custom-button.primary:hover {
+  box-shadow: 0px 15px 20px rgba(114, 169, 201, 0.537);
+}
+
+.secondary {
+  background-color: #66a13f;
+
+}
+.custom-button.secondary:hover {
+    box-shadow: 0px 15px 20px rgba(129, 221, 163, 0.537);
+  }
+.warning {
+  background-color: #f2af3a;
+  color: black;
+}
+.custom-button.warning:hover {
+    box-shadow: 0px 15px 20px rgba(219, 188, 122, 0.537);
+  }
+.alert {
+  background-color: #f2381a;
+
+}
+.custom-button.alert:hover {
+    box-shadow: 0px 15px 20px rgba(234, 174, 164, 0.537);
+  }

@@ -1,0 +1,76 @@
+.dish-edit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    
+}
+.dish-edit-col{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    min-height: 40px;
+}
+.dish-edit-row{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+    min-height: 40px;
+    align-items: flex-end;
+}
+.dish-edit-form{
+    width: 100%;
+}
+
+.dish-edit-col > input[type=text]{
+    width: 100%;
+    font-size: large;
+    border: none;
+    background-color: rgba(181, 214, 233, 0.363);
+    border-radius: 10px;
+    min-height: 30px;
+    padding: 5px;
+}
+.dish-edit-row > input[type=number]{
+    width: 30%;
+    min-height: 30px;
+    font-size: 1em;
+    border-radius: 10px;
+    
+    padding: 5px;
+    border: none;
+    background-color:  rgba(181, 214, 233, 0.363);
+    border-radius: 10px;
+    padding-bottom: 0;
+}
+
+.dish-edit-col > textarea{
+    width: 100%;
+    font-size: large;
+    border: none;
+    background-color:  rgba(181, 214, 233, 0.363);
+    border-radius: 10px;
+}
+
+.dish-edit-row > label{
+    margin-right: 10px;
+    font-size: large ;
+}
+.dish-edit-row.button-group{
+    justify-content: flex-end;
+}
+.dish-edit-row.prep-time{
+ justify-content: flex-end;
+ padding-bottom: 0;
+}
+.dish-edit-row.price{
+    flex-basis: 47%;
+
+}
+.toggle-element{
+    width:200px
+}
